@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Quản lí bệnh viện</title>
+</head>
+
+<body>
+    <header id="header" class="header"></header>
+    <container id="menu" class="menu" data-active="DICH_VU"></container>
+    <container class="benhnhan">
+        <div class="dichvu__title">
+            <h2>Dịch vụ</h2>
+        </div>
+        <form id="dichVu" class="dichvu__information d-flex flex-column p-4 gap-3">
+            <div>
+                <label>Mã số dịch vụ:</label>
+                <input class="form-control w-100 me-0" name="msdv">
+            </div>
+            <div>
+                <label>Đơn giá:</label>
+                <input class="form-control w-100 me-0" name="dongia">
+            </div>
+            <div>
+                <label>Tên dịch vụ :</label>
+                <input class="form-control w-100 me-0" name="tendv">
+            </div>
+            <div class="w-100 cn d-flex justify-content-center gap-3 ms-0">
+                <input type="button" id="create" class="me-0" value="Thêm mới">
+                <input type="button" id="update" class="me-0" value="Cập nhật">
+            </div>
+        </form>
+        </div>
+        <div class="cn">
+            <div class="timkiem d-flex">
+                <input class="timkiem__text form-control" name="keyword" placeholder="Nhập mã hoặc họ tên nhân viên"
+                    autocomplete="off">
+                <input id="timkiem" class="timkiem__sb" type="submit" value="Tìm Kiếm">
+            </div>
+        </div>
+    </container>
+    <div id="table-dichvu" class="container mt-5" style="min-height: 200px;">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>STT</th>
+                    <th>Mã số dịch vụ</th>
+                    <th>Tên dịch vụ</th>
+                    <th>Đơn giá</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    <div id="spinner-container" class="spinner-container"></div>
+</body>
+<script src="https://kit.fontawesome.com/68830dcf1e.js" crossorigin="anonymous"></script>
+<script type="module" src="./js/core.js" defer></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js" defer></script>
+<script type="module" src="./js/module/dichvu/dichvu.js" defer></script>
+
+</html>

@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script type="module" src="./js/core.js" defer></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js" defer></script>
+    <title>Quản lí bệnh viện</title>
+</head>
+
+<body>
+    <header id="header" class="header"></header>
+    <container id="menu" class="menu" data-active="TRANG_CHU"></container>
+    <div class="login" id="login"></div>
+    <container class="doimatkhau" id="doimatkhau">
+        <section>
+            <div class="noi-dung">
+                <div class="form">
+                    <h2>Đổi Mật Khẩu</h2>
+                    <form action="">
+                        <div class="input-form">
+                            <span>Tên Tài Khoản</span>
+                            <input type="text" name="">
+                        </div>
+                        <div class="input-form">
+                            <span>Mật Khẩu Cũ</span>
+                            <input type="password" name="">
+                        </div>
+                        <div class="input-form">
+                            <span>Mật Khẩu Mới</span>
+                            <input type="password" name="">
+                        </div>
+                        <div class="input-form">
+                            <span>Xác Nhận Mật Khẩu </span>
+                            <input type="password" name="">
+                        </div>
+                        <div class="nho-dang-nhap">
+                            <label><input type="checkbox" name=""> Hiện Mật Khẩu</label>
+                        </div>
+                        <div class="input-form">
+                            <input type="submit" value="Đổi Mật Khẩu">
+                        </div>
+                        <div class="input__exit">
+                            <a href="./index.html">Thoát</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </container>
+    <section class="slogan">
+        <img class="slogan__img" src="./img/slogan.jpg" alt="slogan">
+        <div class="slogan__btn">
+            <a href="#" class="btn btn--white btn--animated">See our courses</a>
+        </div>
+    </section>
+    <section class="custom">
+        <div class="row">
+            <div class="col-1-of-3">
+                <div class="custom__item">
+                    <div class="custom__item-img">
+                        <a href="#">
+                            <img src="./img/custom1.png" alt="icon" class="custom__item-img--1">
+                        </a>
+                    </div>
+                    <div class="custom__item-name">
+                        <h3>
+                            <a href="#">Bảng giá chung</a>
+                        </h3>
+                    </div>
+                    <div class="custom__item-desc">
+                        <p> Bảng giá dịch vụ Phòng khám đa khoa Thành Công. Thông tin được công khai, đảm bảo tính minh
+                            bạch. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-1-of-3">
+                <div class="custom__item">
+                    <div class="custom__item-img">
+                        <a href="#">
+                            <img src="./img/custom2.png" alt="icon" class="custom__item-img--1">
+                        </a>
+                    </div>
+                    <div class="custom__item-name">
+                        <h3>
+                            <a href="#">Bệnh án điện tử</a>
+                        </h3>
+                    </div>
+                    <div class="custom__item-desc">
+                        <p> Xem hồ sơ bệnh án trực tuyến, mọi lúc mọi nơi, dễ tra cứu và theo dõi. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-1-of-3">
+                <div class="custom__item">
+                    <div class="custom__item-img">
+                        <a href="#">
+                            <img src="./img/custom3.png" alt="icon" class="custom__item-img--1">
+                        </a>
+                    </div>
+                    <div class="custom__item-name">
+                        <h3>
+                            <a href="#">Tìm Bác Sĩ</a>
+                        </h3>
+                    </div>
+                    <div class="custom__item-desc">
+                        <p> Chủ động lựa chọn bác sĩ thăm khám và giờ giấc thăm khám. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="information">
+        <div class="row">
+            <div class="col-1-of-2">
+                <div class="information__text">
+                    <h1> GIỚI THIỆU VỀ PHÒNG KHÁM ĐA KHOA HÀ NỘI </h1>
+                    <p> Ngày 9/5/2008, Công ty cổ phần Trung tâm y khoa Thành Công (Phòng khám đa khoa Thành Công), một
+                        công ty thành viên thuộc Tập đoàn Thành Công đã tổ chức lễ khai trương và chính thức đi vào hoạt
+                        động tại số 36 Tây Thạnh (Đường CN4, Khu công nghiệp Tân Bình) phường Tây Thạnh, quận Tân Phú,
+                        TP HCM. </p>
+                    <a href="#" class="btn btn--white btn--green">Xem thêm thông tin về chúng tôi</a>
+                </div>
+            </div>
+            <div class="col-1-of-2">
+                <video controls class="information__video">
+                    <source class="information__video-hd" src="./img/gioithieuphongkham.mp4">
+                </video>
+            </div>
+        </div>
+    </section>
+    <section class="specialist">
+        <div class="specialist__title">
+            <h2>Dịch vụ</h2>
+            <h3>Chuyên khoa</h3>
+            <p>Các dịch vụ y tế tại các chuyên khoa của Phòng khám đa khoa Hà Nội</p>
+        </div>
+        <div class="row">
+            <div class="col-1-of-4">
+                <div class="item">
+                    <div class="item__img">
+                        <a href="/chuyen-khoa/bac-si-gia-dinh">
+                            <img src="./img/icon1.png" alt="icon" class="item__img-image">
+                        </a>
+                    </div>
+                    <div class="item__name">
+                        <h4>PHÒNG KHÁM BÁC SĨ GIA ĐÌNH</h4>
+                    </div>
+                    <div class="item__desc">
+                        <p>Dịch vụ BSGĐ có hệ thống bệnh án riêng để quản lý sức khỏe cho mọi người <br>
+                        <pre> </pre>
+                        </p>
+                    </div>
+                    <div class="item__readmore">
+                        <a href="#">Xem thêm</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-1-of-4">
+                <div class="item">
+                    <div class="item__img">
+                        <a href="/chuyen-khoa/bac-si-gia-dinh">
+                            <img src="./img/icon2.png" alt="icon" class="item__img-image">
+                        </a>
+                    </div>
+                    <div class="item__name">
+                        <h4>PHÒNG CẤP CỨU</h4>
+                    </div>
+                    <div class="item__desc">
+                        <p>Trang bị hệ thống Oxy trung tâm <br> Có hệ thống máy Monitor theo dõi bệnh nhân. <br>
+                        <pre> </pre>
+                        </p>
+                    </div>
+                    <div class="item__readmore">
+                        <a href="#">Xem thêm</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-1-of-4">
+                <div class="item">
+                    <div class="item__img">
+                        <a href="/chuyen-khoa/bac-si-gia-dinh">
+                            <img src="./img/icon3.png" alt="icon" class="item__img-image">
+                        </a>
+                    </div>
+                    <div class="item__name">
+                        <h4>CHUYÊN KHOA TAI MŨI HỌNG</h4>
+                    </div>
+                    <div class="item__desc">
+                        <p>Máy nội soi tai mũi họng hiện đại <br> được vô trùng tuyệt đối <br>
+                        <pre> </pre> <br>
+                        <pre></pre>
+                        </p>
+                    </div>
+                    <div class="item__readmore">
+                        <a href="#">Xem thêm</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-1-of-4">
+                <div class="item">
+                    <div class="item__img">
+                        <a href="./chuyen-khoa/bac-si-gia-dinh">
+                            <img src="./img/icon4.png" alt="icon" class="item__img-image">
+                        </a>
+                    </div>
+                    <div class="item__name">
+                        <h4>CHUYÊN KHOA RĂNG HÀM MẶT</h4>
+                    </div>
+                    <div class="item__desc">
+                        <p>Khám và tư vấn chăm sóc răng miệng . Chụp X quang răng kỹ thuật số. Điều trị nha chu. <br>
+                        <pre> </pre>
+                        </p>
+                    </div>
+                    <div class="item__readmore">
+                        <a href="#">Xem thêm</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1-of-4">
+                <div class="item">
+                    <div class="item__img">
+                        <a href="/chuyen-khoa/bac-si-gia-dinh">
+                            <img src="./img/icon7.png" alt="icon" class="item__img-image">
+                        </a>
+                    </div>
+                    <div class="item__name">
+                        <h4>CHUYÊN KHOA NỘI TỔNG QUÁT</h4>
+                    </div>
+                    <div class="item__desc">
+                        <p>Khám, tư vấn và điều trị các bệnh lý: Tim mạch - Huyết áp, Tiểu đường - Nội tiết, Thận, Khớp
+                            ...</p>
+                    </div>
+                    <div class="item__readmore">
+                        <a href="#">Xem thêm</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-1-of-4">
+                <div class="item">
+                    <div class="item__img">
+                        <a href="/chuyen-khoa/bac-si-gia-dinh">
+                            <img src="./img/icon11.png" alt="icon" class="item__img-image">
+                        </a>
+                    </div>
+                    <div class="item__name">
+                        <h4>CHUYÊN KHOA MẮT</h4>
+                    </div>
+                    <div class="item__desc">
+                        <p>Khám, tư vấn, điều trị các bệnh lý về mắt, đục thủy tinh thể. Khám, phát hiện, điều trị tật
+                            khúc xạ</p>
+                    </div>
+                    <div class="item__readmore">
+                        <a href="#">Xem thêm</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-1-of-4">
+                <div class="item">
+                    <div class="item__img">
+                        <a href="/chuyen-khoa/bac-si-gia-dinh">
+                            <img src="./img/icon9.png" alt="icon" class="item__img-image">
+                        </a>
+                    </div>
+                    <div class="item__name">
+                        <h4>NHÀ THUỐC GPP</h4>
+                    </div>
+                    <div class="item__desc">
+                        <p>Đạt chuẩn GPP. <br> Cung cấp các loại thuốc chất lượng cao, giá cả hợp lý. </p>
+                    </div>
+                    <div class="item__readmore">
+                        <a href="#">Xem thêm</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-1-of-4">
+                <div class="item">
+                    <div class="item__img">
+                        <a href="/chuyen-khoa/bac-si-gia-dinh">
+                            <img src="./img/icon10.png" alt="icon" class="item__img-image">
+                        </a>
+                    </div>
+                    <div class="item__name">
+                        <h4>PHÒNG XÉT NGHIỆM</h4>
+                    </div>
+                    <div class="item__desc">
+                        <p>Đội ngũ bác sỹ, kỹ thuật viên giàu kinh nghiệm, làm việc tận tâm. <br>
+                        <pre> </pre>
+                        </p>
+                    </div>
+                    <div class="item__readmore">
+                        <a href="#">Xem thêm</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="infor">
+        <div class="infor__contact">
+            <div class="infor__contact-title">
+                <h3>PHÒNG KHÁM DỊCH VỤ NHANH</h3>
+                <p>Bạn không có thời gian? Hãy gọi ngay Hotline Phòng khám đa khoa Thành Công để đặt lịch khám dịch vụ
+                    nhanh với các bác sĩ, chuyên gia của chúng tôi</p>
+            </div>
+            <h4>HOTLINE: (028) 3815 9435</h4>
+            <a href="#" class="btn btn--white btn--green"> Tìm hiểu thêm </a>
+        </div>
+    </section>
+    <!-- <section class="news">
+        <h3>Tin tức</h3>
+        <div class="row">
+            <div class="col-1-of-4">
+                <div class="item">
+                    <div class="item__image">
+                        <a href="/vi/tin-tuc/">
+                            <img src="/img/new1.jpg" class="item__image-img" alt="news1"> 
+                        </a>
+                    </div>
+
+                    <div class="item__info">
+                        <ul >
+                            <li><a class="item__info-title" href="/vi/tin-tuc/tin-tuc-y-te"> Tin tức y tế</a> </li>
+                            <li><p> 2022-11-21 09:28:10</p></li>
+                            <li>Đăng bởi HN</li>
+                        </ul>
+                    </div>
+
+                    <div class="item__name">
+                        <a class="item__name-title" href="/vi/tin-tuc/tin-tuc-y-te">Nguyên nhân hội chứng suy giáp</a>
+                    </div>
+
+                    <div class="item__desc">
+                        <p>SKĐS - Suy giáp là tình trạng tuyến giáp sản xuất không đủ một số hormone,
+                             hội chứng này gồm các...</p>
+                    </div>
+
+                    <div class="item__readmore">
+                        <a href="/vi/ti-tuc/"> Xem thêm</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-1-of-4">
+                <div class="item">
+                    <div class="item__image">
+                        <a href="/vi/tin-tuc/">
+                            <img src="/img/new1.jpg" class="item__image-img" alt="news1"> 
+                        </a>
+                    </div>
+
+                    <div class="item__info">
+                        <ul>
+                            <li><a href="/vi/tin-tuc/tin-tuc-y-te"> Tin tức y tế</a> </li>
+                            <li><p> 2022-11-21 09:28:10</p></li>
+                            <li>Đăng bởi HN</li>
+                        </ul>
+                    </div>
+
+                    <div class="item__name">
+                        <a class="item__name-title" href="/vi/tin-tuc/tin-tuc-y-te">Nguyên nhân hội chứng suy giáp</a>
+                    </div>
+
+                    <div class="item__desc">
+                        <p>SKĐS - Suy giáp là tình trạng tuyến giáp sản xuất không đủ một số hormone,
+                             hội chứng này gồm các...</p>
+                    </div>
+
+                    <div class="item__readmore">
+                        <a href="/vi/ti-tuc/"> Xem thêm</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-1-of-4">
+                <div class="item">
+                    <div class="item__image">
+                        <a href="/vi/tin-tuc/">
+                            <img src="/img/new1.jpg" class="item__image-img" alt="news1"> 
+                        </a>
+                    </div>
+
+                    <div class="item__info">
+                        <ul>
+                            <li><a href="/vi/tin-tuc/tin-tuc-y-te"> Tin tức y tế</a> </li>
+                            <li><p> 2022-11-21 09:28:10</p></li>
+                            <li>Đăng bởi HN</li>
+                        </ul>
+                    </div>
+
+                    <div class="item__name">
+                        <a class="item__name-title" href="/vi/tin-tuc/tin-tuc-y-te">Nguyên nhân hội chứng suy giáp</a>
+                    </div>
+
+                    <div class="item__desc">
+                        <p>SKĐS - Suy giáp là tình trạng tuyến giáp sản xuất không đủ một số hormone,
+                             hội chứng này gồm các...</p>
+                    </div>
+
+                    <div class="item__readmore">
+                        <a href="/vi/ti-tuc/"> Xem thêm</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-1-of-4">
+               <div class="item">
+                <p>tin tức quan trọng</p>
+                <div class="item__readmore">
+                    <a href="/vi/ti-tuc/"> Xem thêm</a>
+                </div>
+               </div>  
+            </div>
+        </div>
+        <a href="#" class="btn btn--white btn--green"> Xem thêm </a>
+    </section> -->
+    <!-- <section class="contact">
+        <h3 class="contact__title">Liên hệ với chúng tôi</h3>
+        <div class="contact__start">
+            <p>Nếu quý khách có thắc mắc hay ý kiến phản hồi,
+             đóng góp xin vui lòng điền vào Mẫu dưới đây và gửi cho chúng tôi. Xin chân thành cảm ơn!</p>
+             <div class="row">
+                <div class="col-1-of-3">
+                    <div class="contact__item">
+                        <h3>Bệnh viện đa khoa Hà Nội</h3>
+                        <p>
+                            <span></span>
+                           Số 1 , Đại Cồ Việt ,Hai Bà Trưng , Hà Nội
+                        </p>
+                        <p>
+                            Đường dây nóng:0374299999
+                        </p>
+                        <p>
+                            Tổng đài tư vấn:0374299999
+                        </p>
+                        <p>
+                            Fax:0374299999
+                        </p>
+                        <p>
+                            Email:dakhoahanoi@gmail.com
+                        </p>
+                    </div>
+                </div>
+                <div class="col-2-of-3">
+                    <form  class="form">
+                        <div class="row">
+                            <div class="col-1-of-2">
+                                <input type="text" class="form__control" placeholder="Họ và tên" >
+                                <br>
+                                <input type="text" class="form__control" placeholder="Tiêu đề" >
+                            </div>
+                            <div class="col-1-of-2">
+                                <input type="text" class="form__control" placeholder="Email" >
+                                <br>
+                                <input type="text" class="form__control" placeholder="Số điện thoại" >
+                            </div>
+    
+                        </div>
+                        <textarea  class="form__control" cols="30" rows="10" 
+                        placeholder="Nội dung liên hệ" ></textarea>
+                    </form>
+                    <div class="form__submit">
+                        <button class="btn" type="submit" >
+                            Gửi liên hệ
+                        </button>
+                    </div>
+
+                </div>
+             </div>
+        </div>
+    </section> -->
+    <div id="spinner-container" class="spinner-container"></div>
+</body>
+<script type="module" src="./js/module/auth/login.js"></script>
+
+</html>

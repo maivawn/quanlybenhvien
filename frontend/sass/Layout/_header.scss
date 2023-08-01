@@ -1,0 +1,29 @@
+.header{
+    background-image: 
+    linear-gradient(to right bottom, rgba($color-white,.8),rgba($color-white-1,.8)),
+    url('../../img/ảnh\ nền\ 1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    height: 35vh;
+
+    &__logo{
+        height: 13rem;
+        vertical-align: middle;
+    }
+
+   &__logo-box{
+    padding-top: 0.8rem;
+    margin-left: -2rem;
+   }
+   &__title{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 5rem;
+    margin-top: -8rem;
+    font-weight: 900;
+    color: $color-green;
+
+   }
+}

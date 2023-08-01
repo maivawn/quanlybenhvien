@@ -1,0 +1,59 @@
+@import "node_modules/bootstrap/scss/bootstrap.scss";
+@import "./Abstracts/variable";
+@import "./Abstracts/mixin";
+@import "./Base/animations";
+@import "./Base/base";
+@import "./Abstracts/typography";
+@import "./Base/typography";
+@import "./Layout/header";
+@import "./Layout/grid";
+@import "./Base/btn";
+@import "./Base/menu";
+@import "./Base/benhnhan";
+@import "./Base/nhanvien";
+// @import "./Base/chitietthanhtoan";
+@import "./Base/tiepnhan";
+@import "./Base/hosobenhan";
+@import "./Base/khamchuabenh";
+@import "./Base/Trangchu/slogan";
+@import "./Base/Trangchu/custom";
+@import "./Base/Trangchu/information";
+@import "./Base/Trangchu/specialist";
+@import "./Base/Trangchu/infor";
+@import "./Base/Trangchu/news";
+@import "./Base/Trangchu/contact";
+// @import "./Base/luong";
+// @import "./Base/dichvu";
+@import "./Base/thanhtoan";
+// @import "./Base/login";
+
+.form-select,
+.form-control {
+	font-size: unset;
+}
+
+.spinner-container {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	display: none;
+	z-index: 9999;
+
+	> div:first-child {
+		background: black;
+		position: fixed;
+		width: 100%;
+		opacity: 0.7;
+		height: 100%;
+	}
+
+	.spinner-border {
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		width: 50px;
+		height: 50px;
+	}
+}

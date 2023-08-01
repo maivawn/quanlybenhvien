@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="node_modules/select2/dist/css/select2.min.css" rel="stylesheet" />
+    <title>Quản lí bệnh viện</title>
+</head>
+
+<body>
+    <header id="header" class="header"></header>
+    <container id="menu" class="menu" data-active="BENH_NHAN"></container>
+    <container class="hosobenhan">
+        <div class="hosobenhan__title">
+            <h2>Hồ sơ bệnh án</h2>
+        </div>
+        <div class="row d-flex gap-4">
+            <div class="hosobenhan__parent1 col-md-6 p-4">
+                <h3>Thông tin khám bệnh</h3>
+                <form id="form-benhan">
+                    <div>
+                        <label>Mã số bệnh án </label>
+                        <div class="d-flex gap-4">
+                            <input class="form-control me-0" id="msba" name="msba" data-nonfill="true"
+                                data-notDis="true">
+                            <input id="timba" class="me-0" type="button" value="Tìm">
+                        </div>
+                    </div>
+                    <div>
+                        <label>Ngày nhập viện</label>
+                        <input type="date" class="form-control me-0" name="ngaynhapvien">
+                    </div>
+                    <div>
+                        <label>Ngày ra viện</label>
+                        <input type="date" class="form-control me-0" name="ngayravien">
+                    </div>
+                    <div>
+                        <label>Quá trình điều trị</label>
+                        <input class="form-control me-0" name="qtdieutri">
+                    </div>
+                    <div>
+                        <label>Mã nhân viên</label>
+                        <div id="nhanvien-select-container"></div>
+                    </div>
+                    <div>
+                        <label>Mã bệnh nhân</label>
+                        <div id="benhnhan-select-container"></div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-5 hosobenhan__parent2 d-flex flex-column">
+                <div class="nhanvien" style="flex-basis: 50%">
+                    <h3>Nhân viên</h3>
+                    <table id="table-nhanvien" class="w-100">
+                        <tr>
+                            <td>Mã nhân viên :</td>
+                            <td data-field="msnv"></td>
+                        </tr>
+                        <tr>
+                            <td>Tên nhân viên :</td>
+                            <td data-field="hoTen"></td>
+                        </tr>
+                        <tr>
+                            <td>Giới tính :</td>
+                            <td data-field="gioiTinh"></td>
+                        </tr>
+                        <tr>
+                            <td>Chức vụ :</td>
+                            <td data-field="chucVu"></td>
+                        </tr>
+                        <tr>
+                            <td>SDT :</td>
+                            <td data-field="sdt"></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="benhnhan" style="flex-basis: 50%">
+                    <h3>Bệnh nhân</h3>
+                    <table id="table-benhnhan" class="w-100">
+                        <tr>
+                            <td>
+                                <h4>Mã bệnh nhân:</h4>
+                            </td>
+                            <td class="px-3" data-field="msbn"></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h4>Tên bệnh nhân:</h4>
+                            </td>
+                            <td class="px-3" data-field="hoTen"></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h4>Giới tính: </h4>
+                            </td>
+                            <td class="px-3" data-field="gioitinh"></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h4>Ngày sinh:</h4>
+                            </td>
+                            <td class="px-3" data-field="ntns"></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h4>CCCD:</h4>
+                            </td>
+                            <td class="px-3" data-field="cccd"></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h4>SDT:</h4>
+                            </td>
+                            <td class="px-3" data-field="sdt"></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h4>Thông tin sức khỏe:</h4>
+                            </td>
+                            <td class="px-3" data-field="thongtinsuckhoe"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="chucnang">
+            <input type="submit" value="Tra cứu">
+            <input type="submit" value="Xóa ">
+            <input type="submit" value="Ra viện ">
+            <input type="submit" id="create" value="Lưu bệnh án">
+        </div>
+    </container>
+    <div id="spinner-container" class="spinner-container"></div>
+</body>
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="node_modules/select2/dist/js/select2.full.min.js"></script>
+<script src="https://kit.fontawesome.com/68830dcf1e.js" crossorigin="anonymous"></script>
+<script type="module" src="./js/core.js" defer></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js" defer></script>
+<script type="module" src="./js/module/benhan/benhan.js" defer></script>
+
+</html>

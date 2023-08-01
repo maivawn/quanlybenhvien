@@ -1,0 +1,57 @@
+.custom{
+    background-image: 
+    linear-gradient(to right bottom, rgba($color-white,.8),rgba($color-white-1,.8)),
+    url('../../img/ảnh\ nền\ 1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    height: 70vh;
+    font-size: 2rem;
+    color: $color-white;
+    
+    
+
+    &__item{
+        background-color: orange;
+        padding: 2rem;
+        margin-top: 3rem;
+        text-align: left;
+        cursor: pointer;
+        transition: all .2s;
+        border-radius: 1.3rem;
+        height: 30rem;
+        
+        
+        &:hover{
+            transform: scale(1.1);
+            box-shadow: 0rem 2rem 3rem 3rem rgba($color: $color-black, $alpha: .15);
+        }
+
+        &-name{
+           
+          text-transform: uppercase;
+            &:not(:last-child) {
+
+                border-bottom: 0.2rem solid $color-primary;
+                width: 25rem;
+                
+              }
+            
+              &:hover{
+               text-decoration-line: underline ;
+               text-decoration-color: aqua;
+               
+              }
+        }
+
+        &-desc{
+            line-height: 120%;
+            letter-spacing: 0.05rem;
+            font-weight: 10;
+        }
+    }
+
+  
+
+}

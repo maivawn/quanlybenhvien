@@ -1,0 +1,22 @@
+.information{
+    
+    background-image: url(../../img/neninfomation.jpg);
+    height: 50vh;
+    padding-top: 2rem;
+    &__text{
+        width: 90%;
+        font-size: 1.8rem;
+        font-weight: 100;
+        letter-spacing: 0.1rem;
+        line-height: 1.2;
+        color: $color-grey-1;
+        a{
+            margin-top: 2rem;
+            vertical-align: middle;
+        }
+    }
+    &__video{
+       float: right;
+       width: 80%;    
+    }
+}

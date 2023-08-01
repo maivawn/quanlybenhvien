@@ -1,0 +1,13 @@
+.slogan{
+    position: relative;
+    &__img{
+        height: 85vh;
+        width: 100%;
+    }
+    &__btn{
+        position: absolute;
+        bottom: 15%;
+        left: 42%;   
+    }
+   
+}

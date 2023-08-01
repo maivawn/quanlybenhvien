@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="node_modules/select2/dist/css/select2.min.css" rel="stylesheet" />
+    <title>Quản lí bệnh viện</title>
+</head>
+
+<body>
+    <header id="header" class="header"></header>
+    <container id="menu" class="menu" data-active="THANH_TOAN"></container>
+    <container class="chitietthanhtoan">
+        <div class="chitietthanhtoan__title">
+            <h2>Thanh Toán</h2>
+        </div>
+        <div class="row gap-4">
+            <div class="chitietthanhtoan__parent1 col-md-6">
+                <h3>Thanh toán</h3>
+                <div class="row">
+                    <form>
+                        <div>
+                            <label>Mã thanh toán </label>
+                            <div class="d-flex gap-4">
+                                <input class="form-control" type="text" name="mtt">
+                                <input type="button" id="timtt" value="Tìm Kiếm">
+                            </div>
+                        </div>
+                        <div>
+                            <label>Mã dịch vụ</label>
+                            <div id="dichvu-select-container">
+                            </div>
+                        </div>
+                        <div>
+                            <label>Số lượng</label>
+                            <input class="form-control" type="number" min="1" name="soluong">
+                        </div>
+                    </form>
+                    <div>
+                        <label>Tổng chi phí </label>
+                        <div class="d-flex gap-4">
+                            <input class="form-control" type="text" name="tongtien" readonly>
+                            <input class="tinhtong" type="button" id="tinhtong" value="Tính tổng">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="chitietthanhtoan__parent2 col-md-5 d-flex flex-column">
+                <h3>Thông tin bệnh nhân</h3>
+                <table class="thanhtoan__parent2-information w-100 flex-grow-1">
+                    <tr>
+                        <td>
+                            <h4>Mã bệnh nhân:</h4>
+                        </td>
+                        <td class="px-3" data-field="msbn"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h4>Tên bệnh nhân:</h4>
+                        </td>
+                        <td class="px-3" data-field="hoTen"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h4>Giới tính: </h4>
+                        </td>
+                        <td class="px-3" data-field="gioitinh"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h4>Ngày sinh:</h4>
+                        </td>
+                        <td class="px-3" data-field="ntns"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h4>CCCD:</h4>
+                        </td>
+                        <td class="px-3" data-field="cccd"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h4>SDT:</h4>
+                        </td>
+                        <td class="px-3" data-field="sdt"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h4>Thông tin sức khỏe:</h4>
+                        </td>
+                        <td class="px-3" data-field="thongtinsuckhoe"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="chucnang d-flex">
+            <div id="button">
+            </div>
+            <input type="submit" value="In phiếu">
+        </div>
+    </container>
+    <div id="spinner-container" class="spinner-container"></div>
+</body>
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="node_modules/select2/dist/js/select2.full.min.js"></script>
+<script src="https://kit.fontawesome.com/68830dcf1e.js" crossorigin="anonymous"></script>
+<script type="module" src="./js/core.js" defer></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js" defer></script>
+<script type="module" src="./js/module/chitietthanhtoan/chitietthanhtoan.js" defer></script>
+
+</html>

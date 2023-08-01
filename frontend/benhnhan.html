@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Quản lí bệnh viện</title>
+</head>
+
+<body>
+    <header id="header" class="header"></header>
+    <container id="menu" class="menu" data-active="BENH_NHAN"></container>
+    <div class="login" id="login"></div>
+    <container class="benhnhan">
+        <div class="benhnhan__title">
+            <h2>Bệnh Nhân</h2>
+        </div>
+        <div class="row">
+            <form id="benhnhan" class="d-flex flex-wrap benhnhan__information p-4" style="height: unset">
+                <div class="col-md-5">
+                    <label>Mã bệnh nhân:</label>
+                    <input class="form-control me-0" name="msbn">
+                </div>
+                <div class="col-md-5">
+                    <label>Tên bệnh nhân:</label>
+                    <input class="form-control me-0" name="hoTen">
+                </div>
+                <div class="col-md-5">
+                    <label>Giới Tính:</label>
+                    <select class="form-select" name="gioitinh">
+                        <option selected value="0">Nam</option>
+                        <option value="1">Nữ</option>
+                    </select>
+                </div>
+                <div class="col-md-5">
+                    <label>Ngày sinh:</label>
+                    <input class="form-control me-0" name="ntns" type="date">
+                </div>
+                <div class="col-md-5">
+                    <label>CCCD:</label>
+                    <input class="form-control me-0" name="cccd">
+                </div>
+                <div class="col-md-5">
+                    <label>SDT:</label>
+                    <input class="form-control me-0" name="sdt">
+                </div>
+                <div class="col-md-5">
+                    <label>Thông tin sức khỏe:</label>
+                    <textarea class="form-control" name="thongtinsuckhoe"></textarea>
+                </div>
+                <div class="col-md-5 cn ms-0 d-flex align-items-end gap-3">
+                    <div>
+                        <input class="m-0" id="create" type="button" value="Thêm mới">
+                    </div>
+                    <div>
+                        <input class="m-0" id="update" type="button" value="Cập nhật" disabled>
+                    </div>
+                    <div>
+                        <input class="m-0" type="reset" value="Tải lại">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="cn">
+            <div class="timkiem d-flex">
+                <input class="timkiem__text form-control" name="keyword" placeholder="Nhập mã hoặc họ tên bệnh nhân"
+                    autocomplete="off">
+                <input id="timkiem" class="timkiem__sb" type="submit" value="Tìm Kiếm">
+            </div>
+        </div>
+    </container>
+    <div id="table-benhnhan" class="container mt-5" style="min-height: 200px;">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>STT</th>
+                    <th>Mã bệnh nhân</th>
+                    <th>Tên bệnh nhân</th>
+                    <th>Giới tính</th>
+                    <th>Ngày sinh</th>
+                    <th>CCCD</th>
+                    <th>Số điện thoại</th>
+                    <th>TT sức khỏe</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    <div id="spinner-container" class="spinner-container"></div>
+</body>
+<script src="https://kit.fontawesome.com/68830dcf1e.js" crossorigin="anonymous"></script>
+<script type="module" src="./js/core.js" defer></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js" defer></script>
+<script type="module" src="./js/module/benhnhan/benhnhan.js" defer></script>
+
+</html>

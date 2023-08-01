@@ -1,0 +1,99 @@
+.khamchuabenh{
+    &__title {
+        text-align: center;
+        padding-top: 1.5rem;
+        margin-bottom: 3rem;
+
+        h2 {
+            color: $color-green;
+            font-size: 3.5rem;
+            text-transform: uppercase;
+            font-weight: 700;
+            display: inline-block;
+            letter-spacing: 1rem;
+            cursor: pointer;
+            background-image: linear-gradient(to right, $color-green, $color-green-1);
+            color: transparent;
+            -webkit-background-clip: text;
+
+            transition: all 0.2s;
+
+            &:hover {
+                transform: skewY(5deg) scale(1.1);
+                text-shadow: .5rem 1rem 2rem rgba($color-black, 0.2);
+
+            }
+
+        }
+
+    }
+    h3{
+        color:$color-black;
+        font-size: 2rem;
+        font-weight: 500;
+    }
+    &__parent1{
+        border: 0.1rem solid black;
+        background-color: $color-lightcyan;
+       padding-top: 2rem;
+       padding-left: 1rem;
+       padding-bottom: 2rem;
+      
+        input{
+          float: right;
+          margin-right: 5rem;
+        }
+        .tim{
+            width: 3rem;
+            margin-right: 1.2rem;
+           }
+        .mabenhnhan{
+            margin-right: 0.7rem;
+        }
+        
+    }
+    &__parent2{
+        background-color: $color-lightcyan;
+        border: 0.1rem solid black;
+        padding-left: 1rem;
+    }
+    .cn{
+        
+        input{
+            margin-right: 4rem;
+            padding: 1.4rem;
+            cursor: pointer;
+            background-color: $color-green;
+            color: white;
+            font-size: 1.5rem;
+            transition: all .3s;
+            border-radius: 0.3rem;
+            &:hover{
+                background-color: $color-green-1;
+                scale: 1.1;
+            }
+        }
+        
+           
+    }
+    .timkiem{
+        &__text{
+            padding: 0.1rem;
+            margin-right: 0.5rem;
+        }
+        &__sb{
+            margin-right: 4rem;
+            padding: 0.1rem;
+            cursor: pointer;
+            background-color: $color-green;
+            color: white;
+            font-size: 1.5rem;
+            transition: all .3s;
+            border-radius: 0.3rem;
+            &:hover{
+                background-color: $color-green-1;
+                scale: 1.1;
+            }
+        }
+        }
+}

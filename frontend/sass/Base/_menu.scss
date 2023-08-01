@@ -1,0 +1,28 @@
+.menu{
+    ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: antiquewhite;
+    }
+    li{
+        float: left;
+    }
+    li a{
+        display: inline-block;
+        color: rgb(188, 28, 28);
+        text-align: center;
+        padding: 1.4rem 1.6rem;
+        text-decoration: none;
+    }
+    li a:hover {
+        background-color:$color-green-1 ;
+    }
+    .dangnhap{
+        background-color: $color-green-1;
+        display: inline-block;
+        margin-left: 4rem;
+       
+    }
+}

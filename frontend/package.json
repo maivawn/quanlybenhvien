@@ -1,0 +1,19 @@
+{
+	"name": "quanlibenhvien",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"sasstocss": "node-sass sass/main.scss css/style.css"
+	},
+	"author": "Kteam",
+	"license": "ISC",
+	"devDependencies": {
+		"node-sass": "^8.0.0"
+	},
+	"dependencies": {
+		"bootstrap": "^5.2.3",
+		"jquery": "^3.6.3",
+		"select2": "^4.1.0-rc.0"
+	}
+}

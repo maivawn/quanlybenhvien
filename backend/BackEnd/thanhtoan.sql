@@ -1,0 +1,11 @@
+INSERT INTO benhvien.dbo.thanhtoan (mtt, ngaythanhtoan, msnv, msbn) VALUES (N'24dfs', N'2023-02-09', N'NV001', N'BN01');
+INSERT INTO benhvien.dbo.thanhtoan (mtt, ngaythanhtoan, msnv, msbn) VALUES (N'sd2', N'2023-03-01', N'NV001', N'BN01');
+INSERT INTO benhvien.dbo.thanhtoan (mtt, ngaythanhtoan, msnv, msbn) VALUES (N'sd2432', N'2023-02-23', N'NV001', N'BN01');
+INSERT INTO benhvien.dbo.thanhtoan (mtt, ngaythanhtoan, msnv, msbn) VALUES (N'SDF', N'2023-02-17', N'NV001', N'BN01');
+INSERT INTO benhvien.dbo.thanhtoan (mtt, ngaythanhtoan, msnv, msbn) VALUES (N'SDFSFSDF', N'2023-02-23', N'NV001', N'BN01');
+INSERT INTO benhvien.dbo.thanhtoan (mtt, ngaythanhtoan, msnv, msbn) VALUES (N'SUONG0002', N'2023-02-07', N'NV001', N'BN01');
+INSERT INTO benhvien.dbo.thanhtoan (mtt, ngaythanhtoan, msnv, msbn) VALUES (N'SUONG001', N'2023-02-08', N'NV001', N'BN01');
+INSERT INTO benhvien.dbo.thanhtoan (mtt, ngaythanhtoan, msnv, msbn) VALUES (N'TT01', N'2023-02-01', N'NV001', N'BN01');
+INSERT INTO benhvien.dbo.thanhtoan (mtt, ngaythanhtoan, msnv, msbn) VALUES (N'TT02', N'2023-02-02', N'NV002', N'BN02');
+INSERT INTO benhvien.dbo.thanhtoan (mtt, ngaythanhtoan, msnv, msbn) VALUES (N'TT03', N'2023-02-03', N'NV003', N'BN03');
+INSERT INTO benhvien.dbo.thanhtoan (mtt, ngaythanhtoan, msnv, msbn) VALUES (N'TT04', N'2023-02-04', N'NV004', N'BN04');
